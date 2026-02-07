@@ -10,6 +10,7 @@
     --hover-main-color: rgba(89, 38, 140, 0.45);
     --secondary-color: rgb(81 84 118);
     --main-white-color: #f5f5f5;
+    --color-icon-black:black;
     --font-exo: "Exo", sans-serif;
 }
 
@@ -37,6 +38,10 @@ h2 {
 
 .paragraph {
     white-space: pre-line;
+}
+
+.color-icon-black{
+   color: var(--color-icon-black);
 }
 
 .main-color {
@@ -201,7 +206,7 @@ nav {
     background-size: cover;
     background-position: center;
 
-}
+} 
 
 
 
@@ -216,6 +221,15 @@ nav {
     border: 1px solid var(--main-color);
     border-radius: 50%;
     background-color: var(--main-color);
+    &:focus {
+            background-color:#f5f5f5c9;
+            color: var(--main-white-color) !important;
+        }
+    
+        &:hover {
+            background-color: #f5f5f5c9;
+            color: var(--main-white-color) !important;
+        }
 
 }
 
@@ -257,8 +271,19 @@ nav {
                 font-size: 18px;
                 text-transform: capitalize;
                 color: var(--secondary-color);
+                cursor: pointer;
+                &:focus {
+                        /* background-color: var(--hover-main-color); */
+                        color: var(--main-white-color);
+                    }
+                
+                    &:hover {
+                        /* background-color: var(--hover-main-color); */
+                        color: var(--main-white-color);
+                    }
 
             }
+                       
         }
 
         a {
