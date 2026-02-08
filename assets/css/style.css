@@ -10,7 +10,7 @@
     --hover-main-color: rgba(89, 38, 140, 0.45);
     --secondary-color: rgb(81 84 118);
     --main-white-color: #f5f5f5;
-    --color-icon-black:black;
+    --color-icon-black: black;
     --font-exo: "Exo", sans-serif;
 }
 
@@ -28,6 +28,13 @@ h2 {
     line-height: 120%;
     text-transform: capitalize;
 }
+.square {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--main-color);
+    border-radius: 30%;
+    background-color: var(--main-color);
+}
 
 .font-exo {
     font-weight: 600;
@@ -40,8 +47,8 @@ h2 {
     white-space: pre-line;
 }
 
-.color-icon-black{
-   color: var(--color-icon-black);
+.color-icon-black {
+    color: var(--color-icon-black);
 }
 
 .main-color {
@@ -129,6 +136,23 @@ nav {
 
 
 }
+.card{
+    border: 2px solid var(--main-color);
+        color: var(--main-white-color);
+        background-color: transparent;
+        box-shadow: 0px 0px 26px 0px var(--main-color);
+        cursor: pointer;
+    
+        &:focus {
+            background-color: var(--hover-main-color);
+            color: var(--main-white-color);
+        }
+    
+        &:hover {
+            background-color: var(--hover-main-color);
+            color: var(--main-white-color);
+        }
+}
 
 .card-1 {
     width: 100%;
@@ -154,12 +178,11 @@ nav {
 
 
 
-.card {
+.card-2 {
     width: 15rem;
     height: 16rem;
-    /* opacity: 30%; */
     border: 2px solid var(--main-color);
-    color: var(--main-color);
+    color: var(--main-white-color);
     background-color: transparent;
     box-shadow: 0px 0px 26px 0px var(--main-color);
     cursor: pointer;
@@ -175,6 +198,8 @@ nav {
     }
 
 }
+
+
 
 .icon-solution {
     font-size: 60px;
@@ -206,13 +231,14 @@ nav {
     background-size: cover;
     background-position: center;
 
-} 
+}
 
 
 
 .dot {
     width: 10px !important;
     height: 10px !important;
+    cursor: pointer;
 }
 
 .circle {
@@ -221,15 +247,16 @@ nav {
     border: 1px solid var(--main-color);
     border-radius: 50%;
     background-color: var(--main-color);
+
     &:focus {
-            background-color:#f5f5f5c9;
-            color: var(--main-white-color) !important;
-        }
-    
-        &:hover {
-            background-color: #f5f5f5c9;
-            color: var(--main-white-color) !important;
-        }
+        background-color: #f5f5f5c9;
+        color: var(--main-white-color) !important;
+    }
+
+    &:hover {
+        background-color: #f5f5f5c9;
+        color: var(--main-white-color) !important;
+    }
 
 }
 
@@ -241,15 +268,16 @@ nav {
     background-color: var(--main-color);
 
 }
-.image-solution{
+
+.image-solution {
     width: 12rem;
 
     border: 2px solid var(--main-color);
     border-radius: 20px;
-        color: var(--main-color);
-        background-color: transparent;
-        box-shadow: 0px 0px 26px 0px var(--main-color);
-        cursor: pointer;
+    color: var(--main-color);
+    background-color: transparent;
+    box-shadow: 0px 0px 26px 0px var(--main-color);
+    cursor: pointer;
 }
 
 .footer {
@@ -272,18 +300,19 @@ nav {
                 text-transform: capitalize;
                 color: var(--secondary-color);
                 cursor: pointer;
+
                 &:focus {
-                        /* background-color: var(--hover-main-color); */
-                        color: var(--main-white-color);
-                    }
-                
-                    &:hover {
-                        /* background-color: var(--hover-main-color); */
-                        color: var(--main-white-color);
-                    }
+                    /* background-color: var(--hover-main-color); */
+                    color: var(--main-white-color);
+                }
+
+                &:hover {
+                    /* background-color: var(--hover-main-color); */
+                    color: var(--main-white-color);
+                }
 
             }
-                       
+
         }
 
         a {
